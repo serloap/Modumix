@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ModuMix</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="cue">Cue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="volmas">Vol+</string>
+    <string name="volmenos">Vol-</string>
+    <string name="browse">Browse</string>
+    <string name="bendMenos">-</string>
+    <string name="bendMas">+</string>
+
+</resources>

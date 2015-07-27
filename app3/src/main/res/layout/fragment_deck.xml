@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="org.modumix2.Deck">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewButtons"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bendMenos"
+                android:id="@+id/bendMenos" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bendMas"
+                android:id="@+id/bendMas" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play"
+                android:id="@+id/buttonPlay"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cue"
+                android:id="@+id/buttonCue"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/browse"
+                android:id="@+id/buttonBrowse" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ext"
+                android:id="@+id/extMixer" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/visualizerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/scrollViewEq"
+        >
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollViewEq"
+    android:layout_above="@+id/seekBarCue">
+</ScrollView>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/seekBarCue"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/scrollViewButtons">-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Volume"
+            android:id="@+id/labelVolume"
+            android:layout_above="@+id/scrollViewButtons"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cue"
+            android:id="@+id/labelCue"
+            android:layout_above="@+id/seekBarVolumen"
+            android:layout_alignParentLeft="true" />
+    <!--</LinearLayout>-->
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarVolumen"
+        android:layout_above="@+id/scrollViewButtons"
+        android:layout_toRightOf="@+id/labelVolume" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarCue"
+        android:layout_above="@+id/seekBarVolumen"
+        android:layout_toRightOf="@+id/labelVolume"
+        />
+
+
+
+    <!---->
+
+
+</RelativeLayout>
